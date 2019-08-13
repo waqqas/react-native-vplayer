@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{FA1E7710-BD98-11E9-AF96-D32E163AE036}</ProjectGuid>
+    <ProjectGuid>{7950B890-BD99-11E9-962B-35D0012AD986}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Vplayer</RootNamespace>
