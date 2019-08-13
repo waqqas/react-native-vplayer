@@ -1,5 +1,5 @@
-
 # react-native-vplayer
+Beautiful video player for react-native
 
 ## Getting started
 
@@ -50,4 +50,3 @@ import RNVplayer from 'react-native-vplayer';
 // TODO: What to do with the module?
 RNVplayer;
 ```
-  
