@@ -1,20 +1,32 @@
-
 {
   "name": "react-native-vplayer",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Beautiful video player for react-native ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "video",
+    "player"
   ],
-  "author": "",
-  "license": "",
+  "author": "Waqqas Jabbar",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
-
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "react-native-animatable": "^1.3.2",
+    "react-native-image-cache-wrapper": "^1.0.5",
+    "react-native-silent-switch": "^0.1.0",
+    "react-native-video": "^5.0.0",
+    "react-native-volume-control": "^1.0.1",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "patch-package": "^6.1.2"
   }
 }

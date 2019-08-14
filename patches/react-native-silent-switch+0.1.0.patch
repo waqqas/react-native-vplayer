@@ -1,0 +1,10 @@
+diff --git a/node_modules/react-native-silent-switch/RCTSilentSwitch.h b/node_modules/react-native-silent-switch/RCTSilentSwitch.h
+index 61c955f..0adef09 100644
+--- a/node_modules/react-native-silent-switch/RCTSilentSwitch.h
++++ b/node_modules/react-native-silent-switch/RCTSilentSwitch.h
+@@ -1,4 +1,4 @@
+-#import "RCTBridgeModule.h"
++#import "React/RCTBridgeModule.h"
+ #import "SharkfoodMuteSwitchDetector.h"
+ 
+ @interface RCTSilentSwitch : NSObject <RCTBridgeModule>
