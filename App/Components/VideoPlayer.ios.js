@@ -64,7 +64,7 @@ export default class VideoPlayer extends React.Component {
     );
   }
 
-  componentWillUnmount(): void {
+  componentWillUnmount() {
     if (this.controlTimer) {
       clearTimeout(this.controlTimer);
       this.controlTimer = null;

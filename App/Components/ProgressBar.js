@@ -1,26 +1,7 @@
 import React, {Component} from 'react';
-import {Dimensions, PanResponder, StyleSheet, View} from 'react-native';
+import {Dimensions, PanResponder, View} from 'react-native';
 import {Colors, Icon} from '../Themes';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.transparent,
-    paddingVertical: 15,
-    marginHorizontal: 20,
-  },
-  progressContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 2,
-    backgroundColor: Colors.primary,
-  },
-  rect: {
-    alignSelf: 'stretch',
-    height: 2,
-    backgroundColor: Colors.white,
-  },
-});
+import {ProgressBarContainer, ProgressBarSubContainer, PastBar} from '../Themes/ApplicationStyles';
 
 class ProgressBar extends Component {
   state = {
@@ -125,20 +106,18 @@ class ProgressBar extends Component {
 
   render() {
     return (
-      <View style={styles.container} {...this._panResponder.panHandlers}>
-        <View
+      <ProgressBarContainer {...this._panResponder.panHandlers}>
+        <ProgressBarSubContainer
           onLayout={event => {
             const { width } = event.nativeEvent.layout;
             this.width = width;
           }}
-          style={styles.progressContainer}
           {...this._panResponder.panHandlers}
         >
-          <View
+          <PastBar
             ref={progress => {
               this.progress = progress;
             }}
-            style={styles.rect}
             {...this._panResponder.panHandlers}
           />
           <View
@@ -150,8 +129,8 @@ class ProgressBar extends Component {
           >
             <Icon name={'circle'} color={Colors.white} size={16} />
           </View>
-        </View>
-      </View>
+        </ProgressBarSubContainer>
+      </ProgressBarContainer>
     );
   }
 }

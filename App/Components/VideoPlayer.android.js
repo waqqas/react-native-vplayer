@@ -49,7 +49,7 @@ export default class VideoPlayer extends React.Component {
 
   controlTimer = null;
 
-  componentDidMount(): void {
+  componentDidMount() {
     this.updatePlayerDimensions('PORTRAIT');
     // Add and store event listener
     this.volEvent = VolumeControlEvents.addListener(
@@ -63,7 +63,7 @@ export default class VideoPlayer extends React.Component {
     });
   }
 
-  componentWillUnmount(): void {
+  componentWillUnmount() {
     if (this.controlTimer) {
       clearTimeout(this.controlTimer);
       this.controlTimer = null;
